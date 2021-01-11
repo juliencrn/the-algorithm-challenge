@@ -5,6 +5,7 @@ function hasItem (inventory: InventoryItem[], item: InventoryItem): boolean {
 }
 
 function updateItem (inventory: InventoryItem[], item: InventoryItem): InventoryItem[] {
+  console.log('test')
   return inventory.map(
     el => el[1] === item[1]
       ? ([el[0] + item[0], el[1]] as InventoryItem)
